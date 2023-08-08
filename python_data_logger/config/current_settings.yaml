@@ -1,0 +1,9 @@
+Directory:
+    default_directory: data_logs
+Filename:
+    default_filename: data_log.csv
+GUI:
+    window_size:
+    - 800
+    - 600
+    zoom_level: 1
