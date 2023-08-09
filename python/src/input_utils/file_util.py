@@ -1,7 +1,7 @@
 # file_util.py
 import os
 from datetime import datetime
-from config import load_current_settings, save_current_settings, save_last_successful
+from python.settings.settings_manager import load_current_settings, save_current_settings, save_last_successful
 
 current_settings = load_current_settings()
 

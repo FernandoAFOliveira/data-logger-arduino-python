@@ -1,18 +1,13 @@
-# main.py
-import os
-from user_input import get_port, get_directory, get_filename
-from data_logger import DataLogger
+from input_utils.file_util import get_directory, get_filename
+from python.settings.settings_manager import default_directory
+from serial_logger.main_serial_logging import DataLogger
 from multiprocessing import Queue
-from config import CURRENT_SETTINGS_PATH
-
-print(os.path.abspath(CURRENT_SETTINGS_PATH))
-
+from input_utils.serial_port_manager import establish_port_connection
 
 if __name__ == "__main__":
-    # Gather necessary inputs in the main process
-    default_port = 'COM3'
-    port = get_port(default_port)
-    default_directory = 'data_logs'
+    # Attempt to establish a connection to a serial port
+    port = establish_port_connection()
+
     directory = get_directory(default_directory)
     default_filename = 'data_log.csv'
     filename_base = get_filename(default_filename)

@@ -1,18 +1,8 @@
-#config.py
+#settings_manager.py
 import yaml
-import os
+from config.constants import DEFAULTS_PATH, LAST_SUCCESSFUL_PATH, CURRENT_SETTINGS_PATH
 from pathlib import Path
 from configparser import ConfigParser
-
-INVALID_FILENAME_CHARS = ['<', '>', ':', '"', '/', '\\', '|', '?', '*']
-MAX_DIRECTORY_LENGTH = 20  # max length of directory name
-MAX_FILENAME_LENGTH = 20    # This does not include the appended timestamp
-
-# Paths
-DEFAULTS_PATH = os.path.join("config", "defaults.ini")
-LAST_SUCCESSFUL_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'config', 'last_successful.yaml'))
-CURRENT_DIR = Path(__file__).parent
-CURRENT_SETTINGS_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'config', 'current_settings.yaml'))
 
 # Load functions
 def load_defaults():
