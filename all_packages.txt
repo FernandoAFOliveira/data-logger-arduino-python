@@ -1,0 +1,22 @@
+brotlipy==0.7.0
+certifi @ file:///C:/b/abs_36eb5mzhph/croot/certifi_1690232276943/work/certifi
+cffi @ file:///C:/ci_311/cffi_1676423759166/work
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+configparser @ file:///tmp/build/80754af9/configparser_1614614799251/work
+cryptography @ file:///C:/b/abs_13590mi9q9/croot/cryptography_1689373706078/work
+docopt @ file:///C:/ci_311_rebuilds/docopt_1678998156853/work
+idna @ file:///C:/ci_311/idna_1676424932545/work
+pathlib @ file:///Users/ktietz/demo/mc3/conda-bld/pathlib_1629713961906/work
+pipreqs==0.4.13
+pyaml @ file:///home/linux1/recipes/ci/pyaml_1610972911625/work
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pyFirmata==1.1.0
+pylance==0.6.0
+pyOpenSSL @ file:///C:/b/abs_08f38zyck4/croot/pyopenssl_1690225407403/work
+pyserial==3.5
+PySocks @ file:///C:/ci_311/pysocks_1676425991111/work
+PyYAML @ file:///C:/ci_311/pyyaml_1676432488822/work
+requests @ file:///C:/b/abs_316c2inijk/croot/requests_1690400295842/work
+urllib3 @ file:///C:/b/abs_889_loyqv4/croot/urllib3_1686163174463/work
+win-inet-pton @ file:///C:/ci_311/win_inet_pton_1676425458225/work
+yarg==0.1.9

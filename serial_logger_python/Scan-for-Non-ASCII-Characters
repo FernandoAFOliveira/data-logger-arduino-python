@@ -1,0 +1,17 @@
+import os
+
+def find_non_ascii(filename):
+    with open(filename, "r", encoding="utf-8", errors="ignore") as f:
+        lines = f.readlines()
+    for i, line in enumerate(lines):
+        if any(ord(char) > 127 for char in line):
+            print(f"Non-ASCII character in {filename} on line {i + 1}: {line.strip()}")
+
+
+for root, dirs, files in os.walk('.'):
+    if '.venv' in dirs:
+        dirs.remove('.venv')  # Removes '.venv' from the list of directories to be explored further
+    for file in files:
+        if file.endswith('.py'):
+            find_non_ascii(os.path.join(root, file))
+

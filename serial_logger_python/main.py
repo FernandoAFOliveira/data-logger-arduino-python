@@ -3,8 +3,8 @@ import os
 from user_input import get_port, get_directory, get_filename
 from data_logger import DataLogger
 from multiprocessing import Queue
-
 from config import CURRENT_SETTINGS_PATH
+
 print(os.path.abspath(CURRENT_SETTINGS_PATH))
 
 
